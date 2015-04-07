@@ -1,0 +1,68 @@
+Useful function 
+.append() : insert at the end of html document
+.prepend() : inser at the beginning of html document
+.slice(start,end) : separate string from start to end(not included)
+.pop() : remove last element in array
+.push() : insert new element at the end of the array
+
+
+Objects:
+There are three ways to create objects:
+1. Literal notation:
+  var myObject = {
+    "name":"Ken",
+    "zipcode": 9
+  }
+  
+  myObject.name    //accessing property "name" in "myObject" object.
+
+2. dot notation:
+  bio.name = "Ken";
+  bio.city = "Los Angeles";
+  
+  Note: Don't need to include the keyboard "var"
+
+3. bracket notation:
+  bio["Name"]= "Ken";
+
+
+JSON (Javascript Object Notation)
+- JSON is a popular and simple format for storing and transferring nested or hierarchal data
+- Use linter to find syntax error. Ex: http://jsonlint.com/
+
+DOM(Document Object Model)
+- usually "document"
+- Methods:
+  1. getElementById("Education") : grab single page element object with given "id"
+  
+- Property:
+  1. .style : use to change the CSS style of the selected page element
+  2. .display : control how page element interact with others
+
+Loops
+  1. if (condition === true) 
+      { doSomething(); }
+  2. while (condition === true )
+      { doSomething(); }
+     - execute until false
+  3. for (initialization;condition;mutator)
+      { doSomething(); }
+  4. for (item in object/array)
+      { doSomething(); }
+      
+Functions
+  - There are two ways to declare functions;
+    1. var myFunction = function(param){   }
+    2. function myFunction =(param) {  }
+  - click location in a page
+    $(document).click(function(loc) {
+      var x = loc.pageX;
+      var y = loc.pageY;
+      
+      logClicks(x,y);
+    });
+  - most functions return value
+  - functions are object
+  
+    
+    
